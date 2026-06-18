@@ -117,10 +117,10 @@ class Player {
 
     getBounds() {
         return {
-            x: this.x + 5,
-            y: this.y + 5,
-            width: this.width - 10,
-            height: this.height - 10
+            x: this.x + 10,
+            y: this.y + 8,
+            width: this.width - 20,
+            height: this.height - 16
         };
     }
 }

@@ -169,12 +169,36 @@ class Obstacle {
     }
 
     getBounds() {
-        return {
-            x: this.x,
-            y: this.y,
-            width: this.width,
-            height: this.height
-        };
+        switch (this.type) {
+            case OBSTACLE_TYPES.TRUCK:
+                return {
+                    x: this.x + 8,
+                    y: this.y + 5,
+                    width: this.width - 16,
+                    height: this.height - 10
+                };
+            case OBSTACLE_TYPES.STONE:
+                return {
+                    x: this.x + 3,
+                    y: this.y + 3,
+                    width: this.width - 6,
+                    height: this.height - 6
+                };
+            case OBSTACLE_TYPES.BANANA:
+                return {
+                    x: this.x + 2,
+                    y: this.y + 2,
+                    width: this.width - 4,
+                    height: this.height - 4
+                };
+            default:
+                return {
+                    x: this.x,
+                    y: this.y,
+                    width: this.width,
+                    height: this.height
+                };
+        }
     }
 }
 
