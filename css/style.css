@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a2e;
+    color: #eaeaea;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #16213e;
+    padding: 30px;
+    border-radius: 10px;
+    border: 4px solid #e94560;
+    box-shadow: 0 0 30px rgba(233, 69, 96, 0.3);
+}
+
+.game-title {
+    color: #e94560;
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px #0f3460;
+    letter-spacing: 3px;
+}
+
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+    background-color: #2d2d44;
+    border: 3px solid #0f3460;
+    box-shadow: 0 0 20px rgba(15, 52, 96, 0.5);
+}
+
+.game-info {
+    margin-top: 20px;
+}
+
+.instruction {
+    color: #a8a8b3;
+    font-size: 14px;
+    margin: 8px 0;
+    letter-spacing: 1px;
+}
+
+.restart-btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.2s ease;
+}
+
+.restart-btn:hover {
+    background-color: #ff6b81;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(233, 69, 96, 0.6);
+}
+
+.restart-btn:active {
+    transform: scale(0.98);
+}

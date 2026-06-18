@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自行车逆行避让 - 复古街机</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">🚲 逆行自行车 🚲</h1>
+        <canvas id="gameCanvas" width="400" height="600"></canvas>
+        <div class="game-info">
+            <p class="instruction">← → 方向键控制自行车移动</p>
+            <p class="instruction">躲避卡车和石子，小心香蕉皮！</p>
+        </div>
+        <button id="restartBtn" class="restart-btn" style="display:none;">重新开始</button>
+    </div>
+
+    <script src="js/road.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/obstacle.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
